@@ -74,12 +74,21 @@
 @keyframes gradient-shift {
   0% {
     background-position: 0% 50%;
+    filter: hue-rotate(0deg);
+  }
+  25% {
+    background-position: 100% 50%;
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 100% 0%;
+    filter: hue-rotate(60deg);
+  }
+  75% {
+    background-position: 0% 0%;
   }
   100% {
     background-position: 0% 50%;
+    filter: hue-rotate(0deg);
   }
 }
 
@@ -262,9 +271,9 @@ body {
 
 /* Hero */
 .hero {
-  background: linear-gradient(-45deg, #6366f1, #4f46e5, #8b5cf6, #6366f1);
-  background-size: 400% 400%;
-  animation: gradient-shift 15s ease infinite;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #667eea 100%);
+  background-size: 300% 300%;
+  animation: gradient-shift 12s ease infinite;
   color: white;
   padding: 10rem 1rem;
   text-align: center;
@@ -961,6 +970,9 @@ body {
 .contact h2 {
   font-size: 2.8rem;
   margin-bottom: 1rem;
+  color: white;
+  font-weight: 700;
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .contact > .container > p {
