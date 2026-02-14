@@ -4,8 +4,8 @@ export default function Footer() {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <h3>Sobin Sebastian</h3>
-            <p>No-code designer specialized in designing modern websites for business with Taste</p>
+            <h3>Vikas Sharma</h3>
+            <p>Digital marketing expert specializing in modern web design and growth strategies</p>
           </div>
           <div className="footer-section">
             <h4>Quick Links</h4>
@@ -36,7 +36,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; Copyright 2025 Sobin Sebastian. All rights reserved.</p>
+          <p>&copy; Copyright 2025 Vikas Sharma. All rights reserved.</p>
           <a href="#">Terms & Conditions</a>
         </div>
       </div>
