@@ -156,7 +156,7 @@ body {
 .header-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1.2rem;
+  padding: 0.5rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -232,7 +232,7 @@ body {
     background: white;
     border-bottom: 1px solid var(--border-color);
     border-top: 1px solid var(--border-color);
-    padding: 1rem;
+    padding: 0;
     gap: 0;
     max-height: 0;
     overflow: hidden;
@@ -245,7 +245,7 @@ body {
   }
 
   .nav a {
-    padding: 1rem;
+    padding: 0.75rem;
     border-bottom: 1px solid var(--border-color);
     font-size: 1rem;
   }
@@ -1093,7 +1093,7 @@ body {
     background: white;
     border-bottom: 1px solid var(--border-color);
     border-top: 1px solid var(--border-color);
-    padding: 1rem;
+    padding: 0;
     gap: 0;
     max-height: 0;
     overflow: hidden;
@@ -1106,9 +1106,11 @@ body {
   }
 
   .nav a {
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     border-bottom: 1px solid var(--border-color);
     font-size: 1rem;
+    display: block;
+    transition: all 0.2s ease;
   }
 
   .nav a:last-child {
@@ -1116,12 +1118,13 @@ body {
   }
 
   .nav a:hover {
-    background: var(--light-bg);
+    background: var(--primary-color);
+    color: white;
     padding-left: 1.5rem;
   }
 
   .hero {
-    padding: 5rem 1rem;
+    padding: 5rem 1rem 3rem;
     min-height: auto;
   }
 
@@ -1222,7 +1225,7 @@ body {
 
 @media (max-width: 640px) {
   .header-container {
-    padding: 1rem;
+    padding: 0.5rem 1rem;
   }
 
   .logo {
@@ -1230,7 +1233,7 @@ body {
   }
 
   .hero {
-    padding: 3rem 1rem;
+    padding: 5rem 1rem 3rem;
     min-height: auto;
   }
 
@@ -1329,8 +1332,7 @@ body {
 
 @media (max-width: 480px) {
   .header-container {
-    flex-direction: row;
-    gap: 0;
+    padding: 0.5rem 1rem;
   }
 
   .logo {
@@ -1338,7 +1340,7 @@ body {
   }
 
   .hero {
-    padding: 2rem 1rem;
+    padding: 6rem 1rem 3rem;
     min-height: auto;
   }
 
